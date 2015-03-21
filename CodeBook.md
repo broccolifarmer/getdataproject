@@ -23,21 +23,26 @@ The resulting data set has a row for each Subject + Activity combination, with t
 
 From features.txt I have made the following transformations: 
 
-t => Time (time domain measurements)
-f => Freq (frequency domain measurements)
+```t => Time (time domain measurements)```
 
-Body => Body (body acceleration)
-Gravity => Gravity (gravity acceleration)
+```f => Freq (frequency domain measurements)```
 
-Acc => Accelerometer (measurements using accelerometer)
-Gyro => Gyroscope (measurements using gyroscope)
+```Body => Body (body acceleration)```
 
-Jerk => Jerk (body linear acceleration and angular velocity derived in time)
-Mag => Magnitude (magnitude of the three-dimensional signals calculated using the Euclidean norm)
+```Gravity => Gravity (gravity acceleration)```
 
-XYZ => XYZ (3-axial signals in the X, Y and Z directions)
+```Acc => Accelerometer (measurements using accelerometer)```
 
-mean() => Mean (mean average)
-std() => Std (Standard deviation)
+```Gyro => Gyroscope (measurements using gyroscope)```
+
+```Jerk => Jerk (body linear acceleration and angular velocity derived in time)```
+
+```Mag => Magnitude (magnitude of the three-dimensional signals calculated using the Euclidean norm)```
+
+```XYZ => XYZ (3-axial signals in the X, Y and Z directions)```
+
+```mean() => Mean (mean average)```
+
+```std() => Std (Standard deviation)```
 
 Each part of the descriptive name is separated with dot "."

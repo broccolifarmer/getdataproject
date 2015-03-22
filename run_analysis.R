@@ -55,17 +55,17 @@ subdata <- merged[,columns]
 # transform the column names into descriptive names
 
 names(subdata) <- sub("^t","Time",names(subdata))
-names(subdata) <- sub("^f","Freq",names(subdata))
-names(subdata) <- sub("Body","\\.Body",names(subdata))
+names(subdata) <- sub("^f","Frequency",names(subdata))
+#names(subdata) <- sub("Body","\\.Body",names(subdata))
 names(subdata) <- sub("BodyBody","Body",names(subdata))
-names(subdata) <- sub("Gravity","\\.Gravity",names(subdata))
-names(subdata) <- sub("Acc","\\.Accelerometer",names(subdata))
-names(subdata) <- sub("Gyro","\\.Gyroscope",names(subdata))
-names(subdata) <- sub("Jerk","\\.Jerk",names(subdata))
-names(subdata) <- sub("Mag","\\.Magnitude",names(subdata))
+#names(subdata) <- sub("Gravity","\\.Gravity",names(subdata))
+names(subdata) <- sub("Acc","\\Accelerometer",names(subdata))
+names(subdata) <- sub("Gyro","\\Gyroscope",names(subdata))
+#names(subdata) <- sub("Jerk","\\Jerk",names(subdata))
+names(subdata) <- sub("Mag","\\Magnitude",names(subdata))
 names(subdata) <- sub("mean\\(\\)","\\Mean",names(subdata))
 names(subdata) <- sub("std\\(\\)","\\Std",names(subdata))
-names(subdata) <- gsub("-","\\.",names(subdata))
+names(subdata) <- gsub("-","",names(subdata))
 
 # create data set with average of each variable for each activity and each subject
 

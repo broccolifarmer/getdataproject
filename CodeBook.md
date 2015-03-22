@@ -15,19 +15,85 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The resulting data set has a row for each Subject + Activity combination, with the means of each of the 66 variables.
 * There are 30 subjects in the data (1 - 30).
-* There are six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
-* There are 66 measurements.
+* There are six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+* There are 66 feature variables: 
+  1. Time.Body.Accelerometer.Mean.X
+  1. Time.Body.Accelerometer.Mean.Y
+  1. Time.Body.Accelerometer.Mean.Z
+  * Time.Body.Accelerometer.Std.X
+  * Time.Body.Accelerometer.Std.Y
+  * Time.Body.Accelerometer.Std.Z
+  * Time.Gravity.Accelerometer.Mean.X
+  * Time.Gravity.Accelerometer.Mean.Y
+  * Time.Gravity.Accelerometer.Mean.Z
+  * Time.Gravity.Accelerometer.Std.X
+  * Time.Gravity.Accelerometer.Std.Y
+  * Time.Gravity.Accelerometer.Std.Z
+  * Time.Body.Accelerometer.Jerk.Mean.X
+  * Time.Body.Accelerometer.Jerk.Mean.Y
+  * Time.Body.Accelerometer.Jerk.Mean.Z
+  * Time.Body.Accelerometer.Jerk.Std.X
+  * Time.Body.Accelerometer.Jerk.Std.Y
+  * Time.Body.Accelerometer.Jerk.Std.Z
+  * Time.Body.Gyroscope.Mean.X
+  * Time.Body.Gyroscope.Mean.Y
+  * Time.Body.Gyroscope.Mean.Z
+  * Time.Body.Gyroscope.Std.X
+  * Time.Body.Gyroscope.Std.Y
+  * Time.Body.Gyroscope.Std.Z
+  * Time.Body.Gyroscope.Jerk.Mean.X
+  * Time.Body.Gyroscope.Jerk.Mean.Y
+  * Time.Body.Gyroscope.Jerk.Mean.Z
+  * Time.Body.Gyroscope.Jerk.Std.X
+  * Time.Body.Gyroscope.Jerk.Std.Y
+  * Time.Body.Gyroscope.Jerk.Std.Z
+  * Time.Body.Accelerometer.Magnitude.Mean
+  * Time.Body.Accelerometer.Magnitude.Std
+  * Time.Gravity.Accelerometer.Magnitude.Mean
+  * Time.Gravity.Accelerometer.Magnitude.Std
+  * Time.Body.Accelerometer.Jerk.Magnitude.Mean
+  * Time.Body.Accelerometer.Jerk.Magnitude.Std
+  * Time.Body.Gyroscope.Magnitude.Mean
+  * Time.Body.Gyroscope.Magnitude.Std
+  * Time.Body.Gyroscope.Jerk.Magnitude.Mean
+  * Time.Body.Gyroscope.Jerk.Magnitude.Std
+  * Freq.Body.Accelerometer.Mean.X
+  * Freq.Body.Accelerometer.Mean.Y
+  * Freq.Body.Accelerometer.Mean.Z
+  * Freq.Body.Accelerometer.Std.X
+  * Freq.Body.Accelerometer.Std.Y
+  * Freq.Body.Accelerometer.Std.Z
+  * Freq.Body.Accelerometer.Jerk.Mean.X
+  * Freq.Body.Accelerometer.Jerk.Mean.Y
+  * Freq.Body.Accelerometer.Jerk.Mean.Z
+  * Freq.Body.Accelerometer.Jerk.Std.X
+  * Freq.Body.Accelerometer.Jerk.Std.Y
+  * Freq.Body.Accelerometer.Jerk.Std.Z
+  * Freq.Body.Gyroscope.Mean.X
+  * Freq.Body.Gyroscope.Mean.Y
+  * Freq.Body.Gyroscope.Mean.Z
+  * Freq.Body.Gyroscope.Std.X
+  * Freq.Body.Gyroscope.Std.Y
+  * Freq.Body.Gyroscope.Std.Z
+  * Freq.Body.Accelerometer.Magnitude.Mean
+  * Freq.Body.Accelerometer.Magnitude.Std
+  * Freq.Body.Accelerometer.Jerk.Magnitude.Mean
+  * Freq.Body.Accelerometer.Jerk.Magnitude.Std
+  * Freq.Body.Gyroscope.Magnitude.Mean
+  * Freq.Body.Gyroscope.Magnitude.Std
+  * Freq.Body.Gyroscope.Jerk.Magnitude.Mean
+  * Freq.Body.Gyroscope.Jerk.Magnitude.Std
 
 
 ##Descriptive feature naming conventions:
 
-From features.txt I have made the following transformations: 
+From features.txt I have made the following transformations. Short description of meaning of each part of the variable name is in brackets. 
 
 ```t => Time (time domain measurements)```
 
 ```f => Freq (frequency domain measurements)```
 
-```Body => Body (body acceleration)```
+```Body/BodyBody => Body (body acceleration)```
 
 ```Gravity => Gravity (gravity acceleration)```
 

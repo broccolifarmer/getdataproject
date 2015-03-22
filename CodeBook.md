@@ -1,5 +1,8 @@
 #Code Book for Getting and Sharing Data course project
 
+##Data:
+This data set summarizes the mean and standard deviation data for a set of measurements taken using the accelerometer and gyroscope functions of a smartphone of subjects performing six different activities.
+
 ##Raw data: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -17,72 +20,74 @@ The resulting data set has a row for each Subject + Activity combination, with t
 * There are 30 subjects in the data (1 - 30).
 * There are six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 * There are 66 feature variables: 
-  1. Time.Body.Accelerometer.Mean.X
-  1. Time.Body.Accelerometer.Mean.Y
-  1. Time.Body.Accelerometer.Mean.Z
-  * Time.Body.Accelerometer.Std.X
-  * Time.Body.Accelerometer.Std.Y
-  * Time.Body.Accelerometer.Std.Z
-  * Time.Gravity.Accelerometer.Mean.X
-  * Time.Gravity.Accelerometer.Mean.Y
-  * Time.Gravity.Accelerometer.Mean.Z
-  * Time.Gravity.Accelerometer.Std.X
-  * Time.Gravity.Accelerometer.Std.Y
-  * Time.Gravity.Accelerometer.Std.Z
-  * Time.Body.Accelerometer.Jerk.Mean.X
-  * Time.Body.Accelerometer.Jerk.Mean.Y
-  * Time.Body.Accelerometer.Jerk.Mean.Z
-  * Time.Body.Accelerometer.Jerk.Std.X
-  * Time.Body.Accelerometer.Jerk.Std.Y
-  * Time.Body.Accelerometer.Jerk.Std.Z
-  * Time.Body.Gyroscope.Mean.X
-  * Time.Body.Gyroscope.Mean.Y
-  * Time.Body.Gyroscope.Mean.Z
-  * Time.Body.Gyroscope.Std.X
-  * Time.Body.Gyroscope.Std.Y
-  * Time.Body.Gyroscope.Std.Z
-  * Time.Body.Gyroscope.Jerk.Mean.X
-  * Time.Body.Gyroscope.Jerk.Mean.Y
-  * Time.Body.Gyroscope.Jerk.Mean.Z
-  * Time.Body.Gyroscope.Jerk.Std.X
-  * Time.Body.Gyroscope.Jerk.Std.Y
-  * Time.Body.Gyroscope.Jerk.Std.Z
-  * Time.Body.Accelerometer.Magnitude.Mean
-  * Time.Body.Accelerometer.Magnitude.Std
-  * Time.Gravity.Accelerometer.Magnitude.Mean
-  * Time.Gravity.Accelerometer.Magnitude.Std
-  * Time.Body.Accelerometer.Jerk.Magnitude.Mean
-  * Time.Body.Accelerometer.Jerk.Magnitude.Std
-  * Time.Body.Gyroscope.Magnitude.Mean
-  * Time.Body.Gyroscope.Magnitude.Std
-  * Time.Body.Gyroscope.Jerk.Magnitude.Mean
-  * Time.Body.Gyroscope.Jerk.Magnitude.Std
-  * Freq.Body.Accelerometer.Mean.X
-  * Freq.Body.Accelerometer.Mean.Y
-  * Freq.Body.Accelerometer.Mean.Z
-  * Freq.Body.Accelerometer.Std.X
-  * Freq.Body.Accelerometer.Std.Y
-  * Freq.Body.Accelerometer.Std.Z
-  * Freq.Body.Accelerometer.Jerk.Mean.X
-  * Freq.Body.Accelerometer.Jerk.Mean.Y
-  * Freq.Body.Accelerometer.Jerk.Mean.Z
-  * Freq.Body.Accelerometer.Jerk.Std.X
-  * Freq.Body.Accelerometer.Jerk.Std.Y
-  * Freq.Body.Accelerometer.Jerk.Std.Z
-  * Freq.Body.Gyroscope.Mean.X
-  * Freq.Body.Gyroscope.Mean.Y
-  * Freq.Body.Gyroscope.Mean.Z
-  * Freq.Body.Gyroscope.Std.X
-  * Freq.Body.Gyroscope.Std.Y
-  * Freq.Body.Gyroscope.Std.Z
-  * Freq.Body.Accelerometer.Magnitude.Mean
-  * Freq.Body.Accelerometer.Magnitude.Std
-  * Freq.Body.Accelerometer.Jerk.Magnitude.Mean
-  * Freq.Body.Accelerometer.Jerk.Magnitude.Std
-  * Freq.Body.Gyroscope.Magnitude.Mean
-  * Freq.Body.Gyroscope.Magnitude.Std
-  * Freq.Body.Gyroscope.Jerk.Magnitude.Mean
-  * Freq.Body.Gyroscope.Jerk.Magnitude.Std
+  1. TimeBodyAccelerometerMeanX
+  1. TimeBodyAccelerometerMeanY
+  1. TimeBodyAccelerometerMeanZ
+  * TimeBodyAccelerometerStdX
+  * TimeBodyAccelerometerStdY
+  * TimeBodyAccelerometerStdZ
+  * TimeGravityAccelerometerMeanX
+  * TimeGravityAccelerometerMeanY
+  * TimeGravityAccelerometerMeanZ
+  * TimeGravityAccelerometerStdX
+  * TimeGravityAccelerometerStdY
+  * TimeGravityAccelerometerStdZ
+  * TimeBodyAccelerometerJerkMeanX
+  * TimeBodyAccelerometerJerkMeanY
+  * TimeBodyAccelerometerJerkMeanZ
+  * TimeBodyAccelerometerJerkStdX
+  * TimeBodyAccelerometerJerkStdY
+  * TimeBodyAccelerometerJerkStdZ
+  * TimeBodyGyroscopeMeanX
+  * TimeBodyGyroscopeMeanY
+  * TimeBodyGyroscopeMeanZ
+  * TimeBodyGyroscopeStdX
+  * TimeBodyGyroscopeStdY
+  * TimeBodyGyroscopeStdZ
+  * TimeBodyGyroscopeJerkMeanX
+  * TimeBodyGyroscopeJerkMeanY
+  * TimeBodyGyroscopeJerkMeanZ
+  * TimeBodyGyroscopeJerkStdX
+  * TimeBodyGyroscopeJerkStdY
+  * TimeBodyGyroscopeJerkStdZ
+  * TimeBodyAccelerometerMagnitudeMean
+  * TimeBodyAccelerometerMagnitudeStd
+  * TimeGravityAccelerometerMagnitudeMean
+  * TimeGravityAccelerometerMagnitudeStd
+  * TimeBodyAccelerometerJerkMagnitudeMean
+  * TimeBodyAccelerometerJerkMagnitudeStd
+  * TimeBodyGyroscopeMagnitudeMean
+  * TimeBodyGyroscopeMagnitudeStd
+  * TimeBodyGyroscopeJerkMagnitudeMean
+  * TimeBodyGyroscopeJerkMagnitudeStd
+  * FrequencyBodyAccelerometerMeanX
+  * FrequencyBodyAccelerometerMeanY
+  * FrequencyBodyAccelerometerMeanZ
+  * FrequencyBodyAccelerometerStdX
+  * FrequencyBodyAccelerometerStdY
+  * FrequencyBodyAccelerometerStdZ
+  * FrequencyBodyAccelerometerJerkMeanX
+  * FrequencyBodyAccelerometerJerkMeanY
+  * FrequencyBodyAccelerometerJerkMeanZ
+  * FrequencyBodyAccelerometerJerkStdX
+  * FrequencyBodyAccelerometerJerkStdY
+  * FrequencyBodyAccelerometerJerkStdZ
+  * FrequencyBodyGyroscopeMeanX
+  * FrequencyBodyGyroscopeMeanY
+  * FrequencyBodyGyroscopeMeanZ
+  * FrequencyBodyGyroscopeStdX
+  * FrequencyBodyGyroscopeStdY
+  * FrequencyBodyGyroscopeStdZ
+  * FrequencyBodyAccelerometerMagnitudeMean
+  * FrequencyBodyAccelerometerMagnitudeStd
+  * FrequencyBodyAccelerometerJerkMagnitudeMean
+  * FrequencyBodyAccelerometerJerkMagnitudeStd
+  * FrequencyBodyGyroscopeMagnitudeMean
+  * FrequencyBodyGyroscopeMagnitudeStd
+  * FrequencyBodyGyroscopeJerkMagnitudeMean
+  * FrequencyBodyGyroscopeJerkMagnitudeStd
+
+
 
 
 ##Descriptive feature naming conventions:
@@ -91,7 +96,7 @@ From features.txt I have made the following transformations. Short description o
 
 ```t => Time (time domain measurements)```
 
-```f => Freq (frequency domain measurements)```
+```f => Frequency (frequency domain measurements)```
 
 ```Body/BodyBody => Body (body acceleration)```
 
@@ -111,4 +116,3 @@ From features.txt I have made the following transformations. Short description o
 
 ```std() => Std (Standard deviation)```
 
-Each part of the descriptive name is separated with dot "."
